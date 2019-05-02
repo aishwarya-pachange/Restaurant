@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Indian Curry</title>
+    <link rel="stylesheet" href="/assests/stylesheet/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+<body>
+<% include partials/header.ejs %>
+<% include partials/user-navigation.ejs %>
+<% include partials/site-navigation.ejs %>
+
+    <form name="login-form" class="login-form">
+      <form id="login-form" method="POST" action="/profile/Signin"
+
+		<div class="header">
+		<h1>Welcome to Indian Curry</h1>
+		<span>Please enter your Username and Password to Signin</span>
+		</div>
+
+		<div class="content">
+		<input name="UserName" type="text" id="UserName" placeholder="Username" />
+		<div class="user-icon"></div>
+		<input name="Password" type="password" id="Password" placeholder="Password" />
+		<div class="pass-icon"></div>
+		</div>
+
+	<button class="Login-button" type="submit" class="button">Login</button>
+	
+
+
+	</form>
+</form>
+<% include partials/footer.ejs %>
+</body>
+</html>

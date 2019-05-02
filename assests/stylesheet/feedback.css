@@ -1,0 +1,116 @@
+.rating-container {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    width: 900px;
+    height: 400px;
+    padding: 20px 10px 10px 10px;
+}
+.rating-container h3{
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+.rating-content {
+    position: absolute;
+    color: black;
+    top: 70px;
+    padding: 5px;
+    width: 450px;
+    height: 150px;
+    left: 300px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.rated{
+    color: orange;
+}
+
+.feedback-buttons{
+    position: relative;
+
+    left: 150px;
+    top: 20px;
+    width: 100px;
+    height: 35px;
+    padding:20px;
+}
+
+
+.footer{
+    position: relative;
+    top: 68%;
+    display: block;
+    background-color:white;
+    opacity: 0.7;
+    height:10 %;
+    color: black;
+}
+
+.content{
+    position: relative;
+    top: 30%;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+div.stars {
+
+  width: 180px;
+
+  display: inline-block;
+
+}
+input.star { display: none; }
+
+label.star {
+
+  float: left;
+  padding: 10px;
+  font-size: 15px;
+  color: #444;
+  transition: all .2s;
+
+}
+
+
+input.star:checked ~ label.star:before {
+
+  content: '\f005';
+
+  color: black;
+
+  transition: all .25s;
+
+}
+
+
+
+input.star-5:checked ~ label.star:before {
+
+  color: #FE7;
+
+  text-shadow: 0 0 20px #952;
+
+}
+
+
+
+input.star-5:checked ~ label.star:before { color: black; }
+
+
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+
+
+label.star:before {
+
+  content: '\f006';
+
+  font-family: FontAwesome;
+
+}

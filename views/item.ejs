@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Indian Curry</title>
+    <link rel="stylesheet" href="/assests/stylesheet/stylesheet.css">
+    <link rel="stylesheet" href="/assests/stylesheet/item.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/user-navigation.ejs %>
+  <% include partials/site-navigation.ejs %>
+    <div class="menu-item-container">
+        <img src='<%= data.item.imgUrl %>' alt="No image found" width="300" height="200" />
+
+        <div class="menu-item-content">
+            <span>Home > Menu > Item </span>
+            <h3><strong><%= data.item.itemName %></strong></h3>
+            <h4><strong><%= data.item.catalogCategory %></strong></h4>
+            <p><strong><%= data.item.description %></strong></p>
+            <p>Ratings:<span class="fa fa-star rated"></span>
+                <span class="fa fa-star rated"></span>
+                <span class="fa fa-star rated"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+            </p>
+            <form id="form-saveIt" method="post" action="/profile/myItems">
+              <input type="hidden" name="itemCode" value="<%= data.item.itemCode %>">
+              <input type="hidden" name="itemName" value="<%= data.item.itemName %>">
+              <input type="hidden" name="Rating" value="<%= data.item.rating %>">
+              <input type="hidden" name="Category" value="<%= data.item.catalogCategory %>">
+              <button class=" button-save" type="submit" name="action" value="Save">Save it</button>
+          </form>
+
+          <form id="form-rateIt" method="post" action="/profile/myItems">
+            <input type="hidden" name="itemCode" value="<%= data.item.itemCode %>">
+            <button class=" button-rate" type="submit" name="action" value="rateIt">Rate it</button>
+          </form>
+
+          <a href="/categories" class="button button-back">Back</a>
+
+
+        </div>
+    </div>
+    <% include partials/footer.ejs %>
+</body>
+</html>

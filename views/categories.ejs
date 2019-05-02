@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Indian Curry</title>
+    <link rel="stylesheet" href="/assests/stylesheet/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="/assests/stylesheet/Categories.css">
+</head>
+
+<body id="menu">
+  <% include partials/header.ejs %>
+  <% include partials/user-navigation.ejs %>
+
+    <div class="menu-container">
+            <div class="menu-content">
+            <h3><i><u>Menu</u></i></h3>
+            <div>
+  <%for(var i=0; i< data.categories.length; i++) { %>
+          <table>
+          <thead>
+
+              <tr>
+                  <th><%= data.categories[i] %></th>
+              </tr>
+          </thead>
+          <tbody>
+              <%
+              for(var j=0; j< data.items.length; j++){
+                  if(data.categories[i] === data.items[j].catalogCategory){ %>
+                  <tr>
+                      <td><a href="/categories/item?itemCode=<%= data.items[j].itemCode%>"><%= data.items[j].itemName %></a></td>
+                  </tr>
+                 <% }
+              }
+               %>
+              </tbody>
+
+            </table>
+      <%  } %>
+          </div>
+        </div>
+    </div>
+    <% include partials/site-navigation.ejs %>
+  <% include partials/footer.ejs %>
+</body>
+</html>

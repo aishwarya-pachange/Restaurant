@@ -1,0 +1,114 @@
+body, html{
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.nav{
+    position: static;
+    margin-top: -10px;
+    display: block;
+    height: 50px;
+    background-color: white;
+    opacity: 0.6;
+    padding-left: 450px;
+	  padding-right:400px;
+}
+
+.nav li{
+    float: left;
+    padding: 10px;
+	  border-right: 1px solid #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+
+}
+li:last-child {
+  border-right: none;
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 25px 0px 25px;
+}
+.nav li:hover{
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+
+.sidebar{
+    position: fixed;
+    width: 170px;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    text-align: center;
+}
+
+.sidebar li{
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    margin-left: -30px;
+}
+.sidebar li:hover{
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+.sidebar li a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar li a:hover{
+    background-color: orange;
+    color: black;
+}
+
+.content-app{
+  position: relative;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 200px;
+    padding-left: 600px;
+    text-align: center;
+    text-decoration: initial;
+    width: 300px;
+    height:50px;
+    color: white;
+    font-size: 18px;
+}
+.footer{
+    position: relative;
+    top: 55%;
+    display: block;
+    background-color:white;
+    opacity: 0.7;
+    height: 7%;
+    color: black;
+}
+
+.content{
+    position: relative;
+    top: 15px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.rated{
+    color: orange;
+}
+.brand{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}

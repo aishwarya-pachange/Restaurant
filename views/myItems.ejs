@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Indian Curry</title>
+    <link rel="stylesheet" href="/assests/stylesheet/stylesheet.css">
+    <link rel="stylesheet" href="/assests/stylesheet/myItems.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/user-navigation.ejs %>
+  <% include partials/site-navigation.ejs %>
+    <div class="feedback-container">
+        <div class="feedback-content">
+            <table>
+              	<thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Menu</th>
+                    <th>My Rating</th>
+                    <th>Ordered</th>
+                    <th></th>
+        <th></th>
+
+                </tr>
+                	</thead>
+
+                <tbody>
+                      <% for(var j=0; j<UserItems.length; j++) {%>
+                <tr>
+                        <td><%= UserItems[j].itemName %></td>
+                        <td><%= UserItems[j].catalogCategory %></td>
+
+                        <td>
+                              <% for(let i=0;i<UserItems[j].Rating;i++){%>
+                                  <span class="fa fa-star checked"></span>
+                                  <%}%>
+
+                                  <% for(let i=0;i<5-UserItems[j].Rating;i++){%>
+                                    <span class="fa fa-star"></span>
+                                    <%}%>
+					                             </td>
+                        <td>
+                          <% if(UserItems[j].Ordered == true){ %>
+                            <input type="checkbox" checked="checked" disabled>
+                            <% } else { %>
+                              <input type="checkbox" disabled >
+                              <% } %>
+                            </td>
+                            <td>
+	<form id="myItems" action="/profile/myItems" method="post">
+	<input type="hidden" name="itemCode" value="<%= UserItems[j].itemCode %>">
+  <input type="hidden" name="itemName" value="<%= UserItems[j].itemName %>">
+  <input type="hidden" name="Category" value="<%= UserItems[j].catalogCategory %>">
+  <input type="hidden" name="Rating" value="<%= UserItems[j].Rating %>">
+  <input type="hidden" name="Ordered" value="<%= UserItems[j].Ordered %>">
+
+<button class="button-update" type="submit" name="action" value="updateProfile"> Update</button>
+<button class="button-delete" type="submit" name="action" value="deleteItem"> Delete</button>
+</form>
+	</td>
+
+</tr>
+  <%}%>
+
+  </tbody>
+
+  </table>
+  <hr>
+  <br>
+    <p> <i class="fas fa-award"></i>&nbsp;indicates that this rating belongs to you <br> Click <a href="#">here</a> to share a rating</p>
+        </div>
+    </div>
+    <% include partials/footer.ejs %>
+</body>
+</html>

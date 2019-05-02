@@ -1,0 +1,13 @@
+<div class="nav">
+<% if (theUser==null) { %>
+  <a href="/profile/signin">Sign In</a>
+
+         <%}else {%>
+           <form id="form-signOut" method="post" action="/profile/signOut">
+                   <a onclick="document.getElementById('form-signOut').submit();"> Sign Out</a>
+           </form>
+
+<%}%>
+<a href="/myItems">My Items</a>
+  <a href="#">Cart</a>
+ </div>

@@ -1,0 +1,211 @@
+body, html{
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.header{
+    display: block;
+    height: 15%;
+    background-color: black;
+    opacity: 0.8;
+}
+.brand-name{
+    position: absolute;
+    left: 32%;
+    top: 4%;
+	  padding-left: 9%;
+	  padding-right:10%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 280%;
+	  color: #ffa500;
+}
+.logo{
+    position: absolute;
+    left: 25%;
+	  top: 3%;
+}
+.nav{
+
+    display: block;
+    height: 7%;
+    background-color: white;
+    opacity: 0.6;
+    padding-left: 30%;
+    overflow: hidden;
+    margin-top:1.5px;
+	  padding-right:3%;
+}
+.nav{
+  overflow: hidden;
+  background-color: white;
+  margin-top:1.5px;
+}
+
+.nav a{
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Cousine',sans-serif;
+  font-size: 16px;
+}
+
+.nav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.nav a.active{
+  		background-color: orange;
+  		color: white;
+	}
+
+
+
+.sidebar{
+    width: 170px;
+    position: fixed;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    text-align: center;
+}
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar li{
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    margin-left: -30px;
+}
+.sidebar li:hover{
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+.sidebar li a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar li a:hover{
+    background-color: orange;
+    color: black;
+}
+.footer{
+    position: relative;
+    top: 490px;
+    display: block;
+    background-color:white;
+    opacity: 0.7;
+    height: 50px;
+    color: black;
+}
+
+.login-form {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	background: #f3f3f3;
+	border: 1px solid #fff;
+	border-radius: 5px;
+
+}
+.login-form .header {
+	padding: 40px 30px 30px 30px;
+}
+.login-form .header h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 24px;
+	line-height:34px;
+	color: white;
+
+	margin-bottom: 10px;
+}
+
+.login-form .header span {
+	font-size: 11px;
+	line-height: 16px;
+	color: white;
+
+}
+.login-form .content {
+	padding: 0 30px 25px 30px;
+}
+
+/* Input field */
+.login-form .content .input {
+	width: 188px;
+	padding: 15px 25px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	background: #fff;
+	border: 1px solid Black;
+	border-radius: 5px;
+
+	}
+    .user-icon, .pass-icon {
+	width: 46px;
+	height: 47px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	padding-right: 2px;
+	z-index: -1;
+
+
+}
+
+.container{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 50%;
+	  height:45%;
+    color: #e6ac00;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    font-weight: 700px;
+    background-color: black;
+    opacity:0.6;
+}
+
+.footer{
+    position: relative;
+    top: 68%;
+    bottom: :0;
+    width: 100%;
+    display: block;
+    background-color:white;
+    opacity: 0.7;
+    height:10 %;
+    color: black;
+}
+
+.content{
+    position: relative;
+    top: 30%;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+.not-signed-in{
+    position: absolute;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    top: 2%;
+    right: 2%;
+}

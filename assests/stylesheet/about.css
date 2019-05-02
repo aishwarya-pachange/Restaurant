@@ -1,0 +1,44 @@
+body, html{
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.footer{
+    position: relative;
+    top: 68%;
+    display: block;
+    background-color:white;
+    opacity: 0.7;
+    height:10 %;
+    color: black;
+}
+
+.content{
+    position: relative;
+    top: 30%;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+.about-container{
+    position: fixed;
+    left: 400px;
+    top: 250px;
+    width: 700px;
+    height: 250px;
+    background-color: black;
+    opacity: 0.8;
+}
+.about-content{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: orange;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}

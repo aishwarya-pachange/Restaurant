@@ -1,0 +1,46 @@
+.footer{
+    position: relative;
+    top: 68%;
+    display: block;
+    background-color:white;
+    opacity: 0.7;
+    height:10 %;
+    color: black;
+}
+
+.content{
+    position: relative;
+    top: 30%;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+.menu-item-container{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    background-color: white;
+    opacity: 0.8;
+    width: 900px;
+    height: 300px;
+    padding: 20px 10px 10px 10px;
+}
+.menu-item-content{
+    position: absolute;
+    color: black;
+    top: 0;
+    left: 350px;
+    font-family: 'Quicksand', sans-serif;
+}
+.rated{
+    color: orange;
+}
+
+.menu-item-content a{
+	text-decoration:none;
+	color: #white;
+	border:0.5px solid #black;
+	padding: 10px;
+	background-color: #whitesmoke;
+}

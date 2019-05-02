@@ -1,0 +1,53 @@
+body #Categories{
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.footer{
+    position: relative;
+    top: 68%;
+    display: block;
+    background-color:white;
+    opacity: 0.7;
+    height:10 %;
+    color: black;
+}
+
+.content{
+    position: relative;
+    top: 30%;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+.menu-container{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    width: 900px;
+    height: 400px;
+    background-color: white;
+    opacity: 0.7;
+}
+.menu-content{
+    top: 15px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 27px;
+}
+.menu-content a{
+    text-decoration: none;
+    color: green;
+    font-weight: 800;
+}
+.menu-content a:hover{
+    color: black;
+}
